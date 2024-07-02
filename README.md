@@ -25,7 +25,7 @@ The target variable for the model would be the "IS_SUCCESSFUL" column, indicatin
 The feature variables would include attributes such as "APPLICATION_TYPE," "AFFILIATION," "CLASSIFICATION," etc., which are used to predict the target variable.
 
 ### Variables to Remove: ###
-After a few rounds of testing, variables like "EIN" (Employer Identification Number) may not contribute to the prediction and were removed from the input data.
+After a few rounds of testing, I filtered out outliers from the feature variables such as "CLASSIFICATION" and "APPLICATION_TYPE." Variables like "EIN" (Employer Identification Number) may not contribute to the prediction and were removed altogether from the input data.
 
 ![cutoffs](Resources/cutoffs.PNG)
 
@@ -44,8 +44,9 @@ Evaluate the model's performance in terms of accuracy, precision, and recall. Co
 Experiment with hyperparameter tuning, adjusting the number of layers, neurons, or activation functions to enhance the model's predictive power.
 
 ## Summary: ##
-![results](Resources/results.PNG)
 Model was trained with 100 epochs using the Rectified Linear Unit (ReLU) function. 
+
+![results](Resources/results.PNG) <br/>
 
 Loss: 0.5367: The loss value is a measure of how well the model is performing. A lower loss value indicates that the model is performing better.
 
