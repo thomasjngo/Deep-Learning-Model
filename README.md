@@ -12,7 +12,7 @@ The target variable for the model would be the "IS_SUCCESSFUL" column, indicatin
 The feature variables would include attributes such as "APPLICATION_TYPE," "AFFILIATION," "CLASSIFICATION," etc., which are used to predict the target variable.
 
 ### Variables to Remove: ###
-Variables like "EIN" (Employer Identification Number), "ASK_AMT", and "NAME_Other" may not contribute to the prediction and could be removed from the input data.
+After a few rounds of testing, variables like "EIN" (Employer Identification Number) may not contribute to the prediction and were removed from the input data.
 
 ## Compiling, Training, and Evaluating the Model: ##
 
