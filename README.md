@@ -4,8 +4,6 @@
 The purpose of this analysis is to develop a binary classifier using a deep learning model to predict whether applicants funded by Alphabet Soup will be successful. The goal is to effectively classify applicants based on provided features to optimize funding decisions.
 
 ## Data Preprocessing: ##
-![preprocessing](Resources/preprocessing.PNG)
-
 EIN and NAME — Identification columns<br/>
 APPLICATION_TYPE — Alphabet Soup application type<br/>
 AFFILIATION — Affiliated sector of industry<br/>
@@ -17,6 +15,8 @@ INCOME_AMT — Income classification<br/>
 SPECIAL_CONSIDERATIONS — Special considerations for application<br/>
 ASK_AMT — Funding amount requested<br/>
 IS_SUCCESSFUL — Was the money used effectively<br/>
+
+![preprocessing](Resources/preprocessing.PNG)
 
 ### Target Variable(s): ###
 The target variable for the model would be the "IS_SUCCESSFUL" column, indicating whether an applicant was successful or not.
