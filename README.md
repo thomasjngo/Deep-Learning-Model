@@ -33,21 +33,11 @@ After a few rounds of testing, I filtered out outliers from the feature variable
 ![model](Resources/model.PNG)
 
 ### Neurons, Layers, and Activation Functions: ###
-Specify the number of neurons and layers in the neural network model based on the complexity of the data. Choose appropriate activation functions like ReLU or Sigmoid for each layer.
+The neural network model was created using the Rectified Linear Unit (ReLU) function with the X_train data (based on application_df). After some fine tuning with different amounts of layers, I settled on a hidden layer of 80 and 30 with a sigmoid output layer of 1. This provided the best balance between loss and accuracy.
 
 ![array](Resources/array.PNG)
 
-### Model Performance: ###
-Evaluate the model's performance in terms of accuracy, precision, and recall. Compare the results with the target performance metrics to assess the model's effectiveness.
-
-### Steps to Improve Model Performance: ###
-Experiment with hyperparameter tuning, adjusting the number of layers, neurons, or activation functions to enhance the model's predictive power.
-
 ## Summary: ##
-Model was trained with 100 epochs using the Rectified Linear Unit (ReLU) function. 
+Model was trained with 100 epochs putting the overall loss value at 0.5367 with an accuracy of 0.7966 meaning the model correctly predicted the target variable about 79.66% of the time. If I were to use a differnt model for this set of data, I would recommend decision trees as they are easy to interpret and can handle both numerical and categorical data which perfectly suit this funding data. Decision trees can be particularly useful for classification tasks and can handle non-linear relationships in the data making it ideal for the application.
 
 ![results](Resources/results.PNG) <br/>
-
-Loss: 0.5367: The loss value is a measure of how well the model is performing. A lower loss value indicates that the model is performing better.
-
-Accuracy: 0.7966: The accuracy value represents the proportion of correctly classified data points. An accuracy of 0.7966 means that the model is correctly predicting the target variable about 79.66% of the time.
